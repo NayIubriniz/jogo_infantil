@@ -1,0 +1,68 @@
+body.bg{
+    background-color: rgb(146, 214, 241);
+}
+.game-2{
+    max-width: 900px;
+    margin: auto;
+}
+.numbers-grid{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+.numbers-grid button{
+    background-color: #181891;
+    color: #fff;
+}
+.numbers-grid button:hover{
+    background-color: #3b3bbe;
+    transform: scale(1.1);
+}
+.btns{
+    margin-bottom: 10px;
+}
+h1.game2{
+    color: #3b3bbe;
+}
+p.p-game-2{
+    color: #3b3bbe;
+}
+
+@media (max-width:440px) and (min-width:375px){
+    h1.game2{
+        font-size: 30px;
+    }
+    .game-2{
+        max-width: 340px;
+    }
+}
+@media (max-width:384px) and (min-width:360px){
+    h1.game2{
+        font-size: 30px;
+    }
+    .game-2{
+        max-width: 310px;
+    }
+    .numbers-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+        margin: 10px 0;
+        }
+}
+
+@media(max-width: 320px){
+    h1.game2{
+        font-size: 25px;
+    }
+    .game-2{
+        max-width: 300px;
+    }
+    .numbers-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8px;
+    margin: 10px 0;
+    }
+}

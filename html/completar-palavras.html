@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completar Palvras</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h2>Complete a palvra:</h2>
+        <div class="word-container">
+            <span id="elementoPalavra">_ _ _</span>
+        </div>
+        <div class="input-container">
+            <input type="text" id="entradaLetra" maxlength="1">
+            <button type="button" onclick="verificarLetra()">Verificar</button>
+            <button type="button" onclick="mostrarDica()">Mostrar Dica</button>
+            <div id="elementoDica"></div>
+        </div>
+
+        <div id="elementoMensagem"></div>
+
+        
+        <button type="button" onclick="voltarAoMenu()">Voltar</button>
+    </div>
+
+    <script src="../js/completar-palavras.js"></script>
+</body>
+</html>

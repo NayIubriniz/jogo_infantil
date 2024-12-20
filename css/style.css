@@ -1,0 +1,249 @@
+@import '/css/game1.css';
+@import '/css/game2.css';
+@import '/css/game3.css';
+@import '/css/game4.css';
+/*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+    background-color:#E7F692;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #45BB0F;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #337500;
+}
+
+.game-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game{
+    width: 275px;
+    height: 250px;
+    background-color: #f5e50f;
+    border: none;
+    color: #07618b;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+.g1{
+    background-color: #EBEB21;
+    font-weight: bold;
+}
+.g2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E7F692;
+    background-color: #3B90E0;
+    font-weight: bold;
+    gap: 25px;
+    
+}
+.g3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #EBEB21;
+    background-color: #45BB0F;
+    font-weight: bold;
+    gap: 25px;
+}
+
+.g4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E7F692;
+    background-color: #D719AE;
+    font-weight: bold;
+    gap: 25px;
+}
+.g1:hover {
+    background-color: #f5e50f;
+}
+.g2:hover{
+    background-color: #07618b;
+}
+.g3:hover{
+    background-color: #337500;
+}
+.g4:hover{
+    background-color: #940b76;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 25px;
+}
+button > a{
+    color: #fff;
+    
+}
+.nome-jogador{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn-saudacao{
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-saudacao:hover{
+    background-color: #45BB0F;
+}
+#nomeInput{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #07618b;
+    width: 200px;
+}
+@media (width:1114px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .game-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    .g1,.g2,.g3,.g4{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width:884px) and (min-width:768px){
+    body{
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .game-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    p{
+        color: #07618b;
+        font-weight: bold;
+    }
+}
+@media (max-width:440px) and (min-width:375px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .game-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    .img-logo{
+        width: 80px;
+        font-size: 15px;
+    }
+    .g1,.g2,.g3,.g4{
+        width: 160px;
+        height: 165px;
+    }
+}
+
+@media (max-width:384px) and (min-width:360px){
+    .g1,.g2,.g3,.g4{
+        width: 150px;
+        height: 160px;
+        font-size: 15px;
+    }
+    .img-logo{
+        width: 75px;
+    }
+    .container > p{
+        margin-top: 0px;
+    }
+}
+
+@media(max-width: 320px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container > p {
+        margin-bottom: 0px;
+    }
+    .g1,.g2,.g3,.g4{
+        width: 120px;
+        height: 125px;
+        font-size: 15px;
+    }
+    .img-logo{
+        width: 45px;
+        
+    }
+}

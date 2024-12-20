@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Jogo Educativo</title>
+</head>
+<body class="bg">
+    <div class="container">
+        <h1 id="saudacao">Oi!</h1>
+
+        <div class="nome-do-jogador">
+            <input type="text" id="nomeInput" name="nome" placeholder="Digite seu nome">
+            <button class="btn-saudacao" type="button" onclick="definirNome()">Confirmar</button>
+        </div>
+
+        <p>Escolha uma atividade para começar:</p>
+        <div class="game-buttons">
+            <button type="button" class="game g1" id="game1">
+                <a href="../html/completar-palavras.html">
+                    <img class="img-logo" src="../img/ABC.png" alt="imagem do primeiro jogo">Completar Palvras</img>
+                </a>
+            </button>
+            <button type="button" class="game g2" id="game2">
+                <a href="../html/aprendendo-a-contar.html">
+                    <img class="img-logo" src="../img/numeros.png" alt="imagem do segundo jogo">Aprendendo a contar</img>
+                </a>
+            </button>
+            <button type="button" class="game g3" id="game3">
+                <a href="../html/jogo_memoria.html">
+                    <img class="img-logo" src="../img/game of memory.png" alt="imagem do terceiro jogo">Jogo da Memória</img>
+                </a>
+            </button>
+            <button type="button" class="game g4" id="game4">
+                <a href="../html/alfabeto.html">
+                    <img class="img-logo" src="../img/Alfabeto.png" alt="imagem do quarto jogo">Alfabeto</img>
+                </a>
+            </button>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

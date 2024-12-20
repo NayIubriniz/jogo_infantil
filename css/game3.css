@@ -1,0 +1,170 @@
+body.jogo3{
+    background-color: #2e5510;
+}
+.game3{
+    margin-top:0px;
+}
+.memory-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+    gap: 10px;
+}
+.img-dino{
+    width: 150px;
+}
+h2.game-3{
+    color: #83e637;
+}
+.btns3{
+    color: #ffffff;
+    background-color: #4c9c0f;
+}
+
+/* Estilos básicos para o tabuleiro */
+#tabuleiroMemoria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo das cartas */
+.carta {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.carta.virada {
+    transform: rotateY(180deg);
+}
+
+/* Frente da carta (vazia para o verso) */
+.carta .frente,
+.carta .verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.carta .frente {
+    background-color: #f2f2f2; /* Cor da frente da carta */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Verso da carta */
+.carta .verso {
+    background-color: #4CAF50; /* Cor do verso da carta */
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste para imagens */
+.carta .verso img {
+    width: 80%;
+    height: auto;
+    pointer-events: none; /* Impede interação com imagens */
+}
+
+@media (max-width:440px) and (min-width:375px){
+    body.jogo3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Garante que ocupe exatamente a altura da tela */
+        overflow-y: auto; /* Permite rolagem se necessário */
+    }
+    .memory-board,
+    #tabuleiroMemoria {
+        width: 100%; /* Ajusta a largura */
+        grid-template-columns: repeat(3, 2fr); /* Duas colunas */
+        gap: 5px;
+    }
+    .carta {
+        width: 100px; /* Reduz tamanho das cartas */
+        height: 100px;
+    }
+
+    .carta .verso img {
+        width: 75%;
+        height: auto;
+    }
+
+    h2.game-3 {
+        font-size: 30px; /* Reduz o título */
+        margin-bottom: 10px;
+        margin-top: 10px; /* Dá espaço ao título */
+    }
+
+    .btns3 {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+        padding: 5px 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* Garantindo que o body e o contêiner principal não ultrapassem a altura da tela */
+    body.jogo3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh; /* Garante que ocupe exatamente a altura da tela */
+        overflow-y: auto; /* Permite rolagem se necessário */
+    }
+
+    .memory-board,
+    #tabuleiroMemoria {
+        width: 100%; /* Ajusta a largura */
+        grid-template-columns: repeat(3, 1fr); /* Duas colunas */
+        gap: 5px;
+    }
+
+    .carta {
+        width: 90px; /* Reduz tamanho das cartas */
+        height: 90px;
+    }
+
+    .carta .verso img {
+        width: 70%;
+        height: auto;
+    }
+
+    h2.game-3 {
+        font-size: 16px; /* Reduz o título */
+        margin-bottom: 10px;
+        margin-top: 10px; /* Dá espaço ao título */
+    }
+
+    .btns3 {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+        padding: 5px 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

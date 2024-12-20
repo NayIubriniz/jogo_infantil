@@ -19,7 +19,7 @@ function tocarSom(numero){
 }
 
 function voltarAoMenu(){
-    window.location.href = '../html/index.html';
+    window.location.href = '/index.html';
 }
 
 //incializa o jogo com a primeira soma

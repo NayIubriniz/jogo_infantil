@@ -1,3 +1,8 @@
+import '../js/alfabeto.js';
+import '../js/aprendendo-a-contar.js';
+import '../js/completar-palavras.js';
+import '../js/jogo-memoria.js';
+
 document.addEventListener('DOMContentLoaded', () => {
     
     function definirNome() {

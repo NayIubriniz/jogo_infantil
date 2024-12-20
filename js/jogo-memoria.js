@@ -88,7 +88,7 @@ function reiniciarJogo(){
 //voltar ao menu
 
 function voltarAoMenu(){
-    window.location.href = '../html/index.html';
+    window.location.href = '/index.html';
 }
 
 criarTabuleiro();

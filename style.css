@@ -1,7 +1,7 @@
-@import '/css/game1.css';
-@import '/css/game2.css';
-@import '/css/game3.css';
-@import '/css/game4.css';
+@import '../css/game1.css';
+@import '../css/game2.css';
+@import '../css/game3.css';
+@import '../css/game4.css';
 /*------------------------------------*/
 
 * {

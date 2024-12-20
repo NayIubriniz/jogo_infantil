@@ -109,7 +109,7 @@ function mostrarDica() {
 function voltarAoMenu() {
     elementoMensagem.textContent = "Você voltou ao menu!";
     falarTexto("Você voltou ao menu.");
-    window.location.href = '../html/index.html';
+    window.location.href = '/index.html';
 }
 
 // Embaralhar as palavras ao iniciar o jogo
